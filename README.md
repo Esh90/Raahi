@@ -43,6 +43,14 @@ Raahi complements the white cane; it does not replace it.
 
 Each camera frame goes through object detection and depth, then the guidance engine and announcer. The reply is one Protocol 5.2 result: Urdu clip IDs, overlay boxes, haptics, and left / centre / right zones. The judge dashboard shows the live camera, depth map, and those distances.
 
+## User flow
+
+![Raahi user flow: walking with spoken guidance, and hands-free voice control of the app](docs/user-flow.jpg)
+
+**Walk with Raahi.** Say "Raahi, start", hold the phone upright, and the camera names what is ahead with its distance. A spoken instruction in Urdu or English tells the user how to step aside. If something is too close, Raahi says "Stop!" and then the way out. When the path is clear, guidance confirms it. A question asked mid-walk pauses guidance, then it resumes.
+
+**Control everything by voice.** "Raahi, settings kholo" is recognised, understood on the phone, and the app acts (theme, language, navigation) and confirms with "Okay". Works in Urdu and English, and complements the white cane.
+
 ## How it works
 
 ```
