@@ -1,0 +1,78 @@
+# secrets — never commit
+.env
+.env.local
+.env.*.local
+
+# python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# weights + HF cache (depth: backend/tools/download_models.py; YOLOE .pt auto-downloads)
+# backend/models/* (not models/) so the small exported detector below can be re-included
+backend/models/*
+!backend/models/raahi_yoloe_n_320.onnx
+!backend/models/raahi_yoloe_s_416.onnx
+!backend/models/*.labels.json
+weights/
+.cache/
+*.mlpackage/
+*_saved_model/
+*.pt
+mobileclip*.ts
+*.onnx
+*.tflite
+*.bin
+*.safetensors
+*.zip
+!frontend/web-prototype/public/models/raahi_yoloe_n_320.onnx
+!frontend/web-prototype/public/models/raahi_yoloe_n_320.tflite
+
+# media / local captures
+*.mp4
+*.mov
+*.jpg
+*.jpeg
+*.png
+!backend/server/dashboard/**
+testdata/
+runs/
+samples/
+datasets/
+
+# voice scratch
+backend/voice_assets/placeholder/
+backend/voice_assets/audition/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+.cursor/
+*.swp
+
+# mobile build
+node_modules/
+frontend/web-prototype/dist/
+frontend/web-prototype/android/
+*.apk
+
+.python-version
+
+# Android app resources (not captured media)
+!frontend/android/app/src/main/res/**/*.png
+
+__pycache__/
+*.pyc
+
+# shipped detector models (after the *.onnx / *.tflite rules so they win)
+!backend/models/raahi_yoloe_n_320.onnx
+!backend/models/raahi_yoloe_s_416.onnx

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raahi mock · Member C</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@600;700&family=Outfit:wght@360;500;700&family=Syne:wght@700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #e8d9c4;
+      --gold: #9a7040;
+      --teal: #5c7a6c;
+      --green: #3d8a58;
+      --amber: #c4892a;
+      --red: #c45c4a;
+      --text: #3b3228;
+      --muted: #7a6d5c;
+      --stroke: rgba(154, 112, 64, 0.22);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+    body {
+      color: var(--text);
+      font-family: Outfit, system-ui, sans-serif;
+      background:
+        radial-gradient(1000px 520px at 0% 0%, rgba(255,248,236,0.9), transparent 50%),
+        radial-gradient(800px 500px at 100% 0%, rgba(201,168,122,0.28), transparent 46%),
+        var(--ink);
+      overflow: hidden;
+    }
+    .page { height: 100%; display: grid; grid-template-rows: auto 1fr auto; }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 18px 24px; border-bottom: 1px solid var(--stroke);
+    }
+    .brand { display: flex; gap: 14px; align-items: center; }
+    .logo {
+      width: 46px; height: 46px; border-radius: 12px;
+      object-fit: cover; display: block;
+      box-shadow: 0 0 0 1px rgba(154,112,64,0.45), 0 0 24px rgba(201,168,122,0.35);
+    }
+    h1 { margin: 0; font-family: Syne, sans-serif; letter-spacing: 0.2em; font-size: 16px; text-transform: uppercase; }
+    .tag { font-family: "Noto Nastaliq Urdu", serif; color: var(--gold); font-size: 16px; white-space: nowrap; line-height: 1.7; direction: rtl; }
+    header { gap: 12px; }
+    .brand { flex-shrink: 0; }
+    .badge {
+      font-family: "IBM Plex Mono", monospace; font-size: 11px;
+      padding: 7px 12px; border-radius: 999px; border: 1px solid rgba(240,180,41,0.4);
+      color: var(--amber); background: rgba(240,180,41,0.08);
+    }
+    .pills { display: flex; gap: 8px; align-items: center; }
+    .pill {
+      font-family: "IBM Plex Mono", monospace; font-size: 11px;
+      padding: 6px 11px; border-radius: 999px; border: 1px solid var(--stroke); color: var(--muted);
+    }
+    .pill.on { color: var(--green); border-color: rgba(94,224,160,0.4); }
+    main { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 16px; padding: 18px 22px; min-height: 0; }
+    .card {
+      border: 1px solid var(--stroke); border-radius: 20px;
+      background: rgba(246,239,226,0.92); backdrop-filter: blur(16px);
+      box-shadow: 0 10px 28px rgba(90, 70, 40, 0.08);
+      overflow: hidden; min-height: 0; display: flex; flex-direction: column;
+    }
+    .label { padding: 12px 16px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--stroke); }
+    .theatre { flex: 1; position: relative; display: grid; place-items: center; background: #2c261f; }
+    .scene {
+      width: min(90%, 640px); height: 86%;
+      perspective: 820px; position: relative;
+    }
+    .vanishing {
+      position: absolute; left: 50%; top: 10%; width: 8px; height: 8px; margin-left: -4px;
+      border-radius: 50%; background: var(--gold);
+      box-shadow: 0 0 18px var(--gold);
+    }
+    .hall {
+      position: absolute; inset: 12% 6% 8%;
+      transform: rotateX(55deg);
+      display: grid; grid-template-columns: 1fr 1.15fr 1fr; gap: 12px;
+      transform-origin: top;
+    }
+    .lane {
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(0,0,0,0.2));
+      position: relative; overflow: hidden;
+      transition: 0.45s ease;
+    }
+    .lane::after {
+      content: ""; position: absolute; inset: auto 18% 12% 18%; height: 28%;
+      border-radius: 12px; background: rgba(255,255,255,0.04);
+    }
+    .lane.green { box-shadow: inset 0 0 40px rgba(94,224,160,0.22); border-color: rgba(94,224,160,0.4); }
+    .lane.yellow { box-shadow: inset 0 0 48px rgba(240,180,41,0.28); border-color: rgba(240,180,41,0.45); }
+    .lane.red { box-shadow: inset 0 0 56px rgba(255,107,122,0.32); border-color: rgba(255,107,122,0.5); }
+    .obs {
+      position: absolute; left: 22%; right: 22%; bottom: 22%; height: 36%;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #c4a574, #8a6a3a);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+      opacity: 0; transform: translateY(12px); transition: 0.4s ease;
+    }
+    .lane.has .obs { opacity: 1; transform: none; }
+    .caption {
+      position: absolute; bottom: 14px; left: 0; right: 0; text-align: center;
+      font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);
+    }
+    .voice { padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 12px; min-height: 0; overflow: auto; }
+    .now {
+      font-family: Syne, sans-serif; font-size: clamp(22px, 2.5vw, 34px);
+      line-height: 1.15;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 7px; }
+    .chip {
+      font-family: "IBM Plex Mono", monospace; font-size: 11px;
+      padding: 5px 10px; border-radius: 999px;
+      border: 1px solid rgba(232,192,125,0.22); color: #f4e1b5;
+      background: rgba(232,192,125,0.08);
+    }
+    .meters { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+    .meter { padding: 10px 10px 12px; border-radius: 14px; border: 1px solid var(--stroke); background: rgba(0,0,0,0.25); min-width: 0; }
+    .meter small { display: block; color: var(--muted); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; }
+    .meter b { font-family: "IBM Plex Mono", monospace; font-size: 16px; display: block; margin-top: 4px; white-space: nowrap; }
+    .meter.green b { color: var(--green); }
+    .meter.yellow b { color: var(--amber); }
+    .meter.red b { color: var(--red); }
+    .lat { font-family: "IBM Plex Mono", monospace; color: var(--muted); font-size: 12px; }
+    footer {
+      padding: 14px 24px 18px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+      border-top: 1px solid var(--stroke); color: var(--muted); font-size: 13px;
+    }
+    footer code {
+      font-family: "IBM Plex Mono", monospace; color: var(--teal);
+      background: rgba(110,231,210,0.08); padding: 4px 8px; border-radius: 8px;
+    }
+    .wave { height: 36px; width: 100%; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <img class="logo" src="/logo.png" alt="Raahi" />
+        <div>
+          <h1>Raahi</h1>
+          <div class="tag">آپ کے سفر کا ساتھی</div>
+        </div>
+      </div>
+      <div class="pills">
+        <div class="badge">no models · valid JSON</div>
+        <div class="pill" id="phone">phone offline</div>
+        <div class="pill" id="mode">navigate</div>
+      </div>
+    </header>
+    <main>
+      <section class="card">
+        <div class="label">Indoor corridor · left / centre / right</div>
+        <div class="theatre">
+          <div class="scene">
+            <div class="vanishing"></div>
+            <div class="hall">
+              <div class="lane" id="L"><div class="obs"></div></div>
+              <div class="lane" id="C"><div class="obs"></div></div>
+              <div class="lane" id="R"><div class="obs"></div></div>
+            </div>
+            <div class="caption" id="cap">demo playing until a phone connects</div>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="label">Spoken Urdu clips</div>
+        <div class="voice">
+          <div class="now" id="en">Chair ahead, 2 steps, move 2 left</div>
+          <div class="chips" id="chips"></div>
+          <div class="meters">
+            <div class="meter" id="mL"><small>Left</small><b>3.1 m</b></div>
+            <div class="meter" id="mC"><small>Centre</small><b>1.4 m</b></div>
+            <div class="meter" id="mR"><small>Right</small><b>2.8 m</b></div>
+          </div>
+          <div class="lat" id="lat">detect 18 · depth 44 · engine 2 · total 71 ms</div>
+          <canvas class="wave" id="wave"></canvas>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>Member C connects the APK to <code id="wsurl">ws://&lt;mac-ip&gt;:8001/ws</code></div>
+      <div>Same contract as the real server · empty clips = stay silent</div>
+    </footer>
+  </div>
+  <script>
+    const DEMO = [
+      { en: "Chair ahead, 2 steps, move 2 left", clips: ["obj_chair","pos_ahead","steps_2","move_left_2"],
+        zones: { left:["green",3.1], centre:["yellow",1.4], right:["green",2.8] }, obstacle: "C" },
+      { en: "Path clear", clips: ["sys_path_clear"],
+        zones: { left:["green",3.4], centre:["green",3.2], right:["green",3.0] }, obstacle: "" },
+      { en: "Stop", clips: ["urg_stop"],
+        zones: { left:["yellow",1.6], centre:["red",0.6], right:["yellow",1.5] }, obstacle: "C" },
+      { en: "Looking for the door", clips: ["cmd_finding_door"],
+        zones: { left:["green",2.9], centre:["green",2.4], right:["green",2.7] }, obstacle: "" },
+      { en: "Turn a little left", clips: ["turn_left_slight"],
+        zones: { left:["green",2.2], centre:["green",2.5], right:["green",3.1] }, obstacle: "L" },
+      { en: "You have reached the door", clips: ["find_arrived_door"],
+        zones: { left:["green",2.8], centre:["yellow",0.9], right:["green",2.6] }, obstacle: "C" },
+    ];
+    let i = 0, live = false, hist = [];
+    const host = location.hostname || "127.0.0.1";
+    document.getElementById("wsurl").textContent = `ws://${host}:8001/ws`;
+
+    function paint(m) {
+      document.getElementById("en").textContent = m.en || m.english || "…";
+      const chips = document.getElementById("chips");
+      chips.innerHTML = "";
+      (m.clips || []).forEach((id) => {
+        const s = document.createElement("span"); s.className = "chip"; s.textContent = id; chips.appendChild(s);
+      });
+      const z = m.zones || {};
+      [["mL","L","left"],["mC","C","centre"],["mR","R","right"]].forEach(([mid, lid, key]) => {
+        const pair = z[key] || ["", null];
+        const color = Array.isArray(pair) ? pair[0] : pair.color;
+        const metres = Array.isArray(pair) ? pair[1] : pair.m;
+        const meter = document.getElementById(mid);
+        const lane = document.getElementById(lid);
+        meter.className = "meter " + (color || "");
+        meter.querySelector("b").textContent = metres != null ? Number(metres).toFixed(1) + " m" : "—";
+        lane.className = "lane " + (color || "") + (m.obstacle === lid ? " has" : "");
+      });
+      if (m.latency_ms) {
+        const l = m.latency_ms;
+        document.getElementById("lat").textContent =
+          `detect ${l.detect} · depth ${l.depth} · engine ${l.engine} · total ${l.total} ms`;
+        hist.push(l.total); if (hist.length > 40) hist.shift();
+        draw(hist);
+      }
+      if (m.mode) document.getElementById("mode").textContent = m.mode;
+    }
+
+    function draw(h) {
+      const c = document.getElementById("wave");
+      const dpr = devicePixelRatio || 1;
+      c.width = c.clientWidth * dpr; c.height = 36 * dpr;
+      const ctx = c.getContext("2d");
+      ctx.clearRect(0,0,c.width,c.height);
+      if (!h.length) return;
+      const max = Math.max(80, ...h);
+      const g = ctx.createLinearGradient(0,0,c.width,0);
+      g.addColorStop(0, "#e8c07d"); g.addColorStop(1, "#6ee7d2");
+      ctx.beginPath();
+      h.forEach((v, idx) => {
+        const x = (idx / Math.max(1, h.length-1)) * c.width;
+        const y = c.height - (v/max)*(c.height-8) - 3;
+        idx ? ctx.lineTo(x,y) : ctx.moveTo(x,y);
+      });
+      ctx.strokeStyle = g; ctx.lineWidth = 2*dpr; ctx.stroke();
+    }
+
+    function tick() {
+      if (live) return;
+      paint(DEMO[i % DEMO.length]);
+      i += 1;
+    }
+    tick();
+    setInterval(tick, 2800);
+
+    function proto() { return location.protocol === "https:" ? "wss" : "ws"; }
+    function connect() {
+      const ws = new WebSocket(`${proto()}://${location.host}/ws/dashboard`);
+      ws.onmessage = (ev) => {
+        const m = JSON.parse(ev.data);
+        live = true;
+        document.getElementById("phone").textContent = m.phone ? "phone live" : "phone offline";
+        document.getElementById("phone").classList.toggle("on", !!m.phone);
+        document.getElementById("cap").textContent = m.phone ? "live from the APK" : "demo playing until a phone connects";
+        const z = m.zones || {};
+        paint({
+          en: m.english || m.spoken_en,
+          clips: m.clips,
+          mode: m.mode,
+          latency_ms: m.latency_ms,
+          obstacle: (z.centre && z.centre.color === "red") ? "C" : "",
+          zones: {
+            left: z.left, centre: z.centre, right: z.right
+          }
+        });
+      };
+      ws.onclose = () => { live = false; setTimeout(connect, 1600); };
+    }
+    connect();
+  </script>
+</body>
+</html>

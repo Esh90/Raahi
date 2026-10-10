@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raahi — آپ کے سفر کا ساتھی</title>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <link rel="icon" href="/logo.png?v=2" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@600&family=Outfit:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #e8d9c4;
+      --card: #f6efe2;
+      --line: #d4c2a6;
+      --text: #3b3228;
+      --muted: #7a6d5c;
+      --gold: #9a7040;
+      --teal: #5c7a6c;
+      --green: #3d8a58;
+      --amber: #c4892a;
+      --red: #c45c4a;
+      --stage: #2c261f;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background:
+        radial-gradient(900px 420px at 8% -10%, rgba(255,248,236,0.9), transparent 55%),
+        radial-gradient(700px 380px at 100% 0%, rgba(201,168,122,0.28), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      font-family: Outfit, system-ui, sans-serif;
+    }
+    .app {
+      height: 100%;
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr) auto auto;
+      gap: 12px;
+      padding: 12px 16px 16px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 0;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+    .logo {
+      width: 44px; height: 44px; border-radius: 10px; flex: 0 0 auto;
+      object-fit: cover; display: block;
+      box-shadow: 0 0 0 1px #9a704055;
+    }
+    .brand h1 {
+      margin: 0; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700;
+    }
+    .brand .tag {
+      font-family: "Noto Nastaliq Urdu", serif; color: var(--gold);
+      font-size: 14px; line-height: 1.7; margin-top: 1px; direction: rtl;
+    }
+    .pills { display: flex; gap: 8px; flex-wrap: nowrap; overflow: hidden; }
+    .pill {
+      font-family: "IBM Plex Mono", monospace; font-size: 11px;
+      padding: 5px 10px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--muted); white-space: nowrap;
+    }
+    .pill.on { color: var(--green); border-color: #3d8a5866; }
+    .pill.gold { color: var(--gold); border-color: #9a704066; background: #efe4d0; }
+    .views {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 12px;
+      min-height: 0;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 24px rgba(90, 70, 40, 0.08);
+      border-radius: 16px;
+      display: grid;
+      grid-template-rows: 36px minmax(0, 1fr);
+      min-height: 0;
+      overflow: hidden;
+    }
+    .card h2 {
+      margin: 0; padding: 0 14px;
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: 11px; font-weight: 500; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--muted);
+      border-bottom: 1px solid var(--line);
+    }
+    .stage {
+      min-height: 0;
+      background: var(--stage);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .stage img { max-width: 100%; max-height: 100%; object-fit: contain; display: none; }
+    .stage img.show { display: block; }
+    .wait { color: var(--muted); font-size: 13px; padding: 16px; text-align: center; }
+    .wait.hide { display: none; }
+    .strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      min-height: 0;
+    }
+    .cell {
+      background: var(--card);
+      border: 1px solid var(--line);
+      box-shadow: 0 6px 16px rgba(90, 70, 40, 0.06);
+      border-radius: 14px;
+      padding: 10px 12px;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .cell span {
+      font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+    }
+    .cell strong {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 20px; font-weight: 600; margin-top: 4px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .cell.green strong { color: var(--green); }
+    .cell.yellow strong { color: var(--amber); }
+    .cell.red strong { color: var(--red); }
+    .spoken {
+      background: var(--card);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 20px rgba(90, 70, 40, 0.07);
+      border-radius: 16px;
+      padding: 14px 18px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: center;
+      min-height: 0;
+    }
+    .spoken.danger { border-color: #c45c4a88; background: #f3ddd4; }
+    #en {
+      margin: 0;
+      font-size: clamp(18px, 2vw, 26px);
+      font-weight: 650;
+      line-height: 1.25;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+    .chip {
+      font-family: "IBM Plex Mono", monospace; font-size: 11px;
+      padding: 4px 8px; border-radius: 999px;
+      border: 1px solid var(--line); color: var(--gold);
+    }
+    @media (max-width: 640px) {
+      body { overflow: auto; }
+      .app { height: auto; min-height: 100%; }
+      .spoken { grid-template-columns: 1fr; }
+      .chips { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="brand">
+        <img class="logo" src="/logo.png?v=2" alt="Raahi" />
+        <div>
+          <h1>Raahi</h1>
+          <div class="tag">آپ کے سفر کا ساتھی</div>
+        </div>
+      </div>
+      <div class="pills">
+        <div class="pill gold" id="mockpill">mock</div>
+        <div class="pill" id="phone">offline</div>
+        <div class="pill" id="mode">navigate</div>
+        <div class="pill" id="fps">0 fps</div>
+        <div class="pill" id="avg">— ms</div>
+      </div>
+    </header>
+
+    <section class="views">
+      <article class="card">
+        <h2><span>Camera</span><span>objects</span></h2>
+        <div class="stage">
+          <img id="cam" alt="camera" />
+          <div class="wait" id="wait">Waiting for a phone frame</div>
+        </div>
+      </article>
+      <article class="card">
+        <h2><span>Depth</span><span>near is hot</span></h2>
+        <div class="stage">
+          <img id="depth" alt="depth" />
+        </div>
+      </article>
+    </section>
+
+    <section class="strip">
+      <div class="cell" id="zL"><span>Left</span><strong>—</strong></div>
+      <div class="cell" id="zC"><span>Centre</span><strong>—</strong></div>
+      <div class="cell" id="zR"><span>Right</span><strong>—</strong></div>
+    </section>
+
+    <footer class="spoken" id="spoken">
+      <p id="en">Hold the phone upright to begin.</p>
+      <div class="chips" id="clips"></div>
+    </footer>
+  </div>
+  <script>
+    const cam = document.getElementById("cam");
+    const depth = document.getElementById("depth");
+    const wait = document.getElementById("wait");
+
+    fetch("/health").then(r => r.json()).then(h => {
+      document.getElementById("mockpill").textContent = h.mock ? "mock depth" : "metric depth";
+    }).catch(() => {});
+
+    function proto() { return location.protocol === "https:" ? "wss" : "ws"; }
+    function connect() {
+      const ws = new WebSocket(`${proto()}://${location.host}/ws/dashboard`);
+      ws.onmessage = (ev) => {
+        const m = JSON.parse(ev.data);
+        if (m.jpeg_b64) {
+          cam.src = "data:image/jpeg;base64," + m.jpeg_b64;
+          cam.classList.add("show");
+          wait.classList.add("hide");
+        }
+        if (m.depth_b64) {
+          depth.src = "data:image/jpeg;base64," + m.depth_b64;
+          depth.classList.add("show");
+        }
+        document.getElementById("phone").textContent = m.phone ? "live" : "offline";
+        document.getElementById("phone").classList.toggle("on", !!m.phone);
+        document.getElementById("mode").textContent = m.mode || "navigate";
+        document.getElementById("fps").textContent = (m.fps || 0) + " fps";
+        document.getElementById("avg").textContent = (m.latency_avg_ms ?? "—") + " ms";
+        document.getElementById("en").textContent = m.spoken_en || "Listening…";
+        document.getElementById("spoken").classList.toggle("danger", !!m.urgent || m.kind === "urgent_stop");
+        const box = document.getElementById("clips");
+        box.innerHTML = "";
+        (m.clips || []).forEach((id) => {
+          const s = document.createElement("span");
+          s.className = "chip";
+          s.textContent = id;
+          box.appendChild(s);
+        });
+        setZone("zL", m.zones && m.zones.left);
+        setZone("zC", m.zones && m.zones.centre);
+        setZone("zR", m.zones && m.zones.right);
+      };
+      ws.onclose = () => setTimeout(connect, 1500);
+    }
+    function setZone(id, z) {
+      const el = document.getElementById(id);
+      el.className = "cell " + ((z && z.color) || "");
+      el.querySelector("strong").textContent = z && z.m != null ? z.m.toFixed(2) + " m" : "—";
+    }
+    connect();
+  </script>
+</body>
+</html>

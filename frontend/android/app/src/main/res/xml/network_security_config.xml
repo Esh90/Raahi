@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Release: TLS only (https / wss). The debug source set overrides this file to allow
+     cleartext for talking to a development server on the local network. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>

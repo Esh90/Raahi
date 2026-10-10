@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="400dp"
+    android:viewportWidth="400"
+    android:viewportHeight="400">
+
+    <!--
+        Raahi monogram: cream R + gold swoosh, transparent background.
+        Used on teal screens (onboarding, splash).
+    -->
+
+    <!-- Cream/off-white R letterform -->
+    <path
+        android:fillColor="#F2EEE3"
+        android:pathData="
+            M90,50 L90,350
+            L140,350 L140,240
+            L200,240 L258,350
+            L316,350 L254,236
+            C290,220 314,192 314,154
+            C314,98 272,50 214,50 Z
+            M140,100 L208,100
+            C238,100 262,122 262,154
+            C262,186 238,210 208,210
+            L140,210 Z" />
+
+    <!-- Gold swoosh -->
+    <path
+        android:fillColor="#C9973A"
+        android:pathData="
+            M78,288
+            C110,252 185,200 340,178
+            L334,212
+            C188,236 120,288 106,326 Z" />
+
+</vector>

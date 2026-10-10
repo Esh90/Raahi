@@ -1,0 +1,134 @@
+RAAHI - URDU CLIPS TO GENERATE IN ELEVENLABS
+============================================
+
+HOW TO DO IT
+1. ElevenLabs -> Text to Speech. Model: "Eleven v3". Pick ONE female voice and keep it
+   (and its settings: Stability ~50, Similarity ~75, Style 0) for EVERY clip.
+   Language: Urdu (if the UI asks).
+2. For each line below: paste the URDU TEXT, generate, listen. If it sounds wrong,
+   regenerate. Then download the MP3.
+3. Rename the download to exactly the FILENAME shown (e.g. obj_chair.mp3) and put it in:
+       voice_assets/raw/
+4. When done (or any time), run:   python -m voice_assets.process_clips
+   It trims silence, evens out loudness, copies clips into the app and lists any missing.
+
+TIPS
+- Short words (objects) sometimes come out rushed. If so, generate the word
+  followed by a full stop, e.g. "کرسی۔"  - the trimmer removes extra silence.
+- Keep the same voice for everything; mixed voices sound broken when clips are joined.
+- Lines are grouped; the most important groups come first (urgent, objects, positions).
+
+FORMAT:   FILENAME | URDU TEXT | ENGLISH MEANING
+
+
+---------- URGENT (3) ----------
+urg_stop.mp3 | رُک جائیں! | Stop!
+urg_stop_obstacle.mp3 | رُک جائیں، سامنے رکاوٹ ہے! | Stop, obstacle ahead!
+urg_stop_person.mp3 | رُک جائیں، سامنے کوئی ہے! | Stop, someone is ahead!
+
+---------- OBJECT (29) ----------
+obj_person.mp3 | کوئی شخص | a person
+obj_chair.mp3 | کرسی | chair
+obj_table.mp3 | میز | table
+obj_desk.mp3 | ڈیسک | desk
+obj_sofa.mp3 | صوفہ | sofa
+obj_bench.mp3 | بینچ | bench
+obj_door.mp3 | دروازہ | door
+obj_glass_door.mp3 | شیشے کا دروازہ | glass door
+obj_window.mp3 | کھڑکی | window
+obj_wall.mp3 | دیوار | wall
+obj_pillar.mp3 | ستون | pillar
+obj_stairs.mp3 | سیڑھیاں | stairs
+obj_trash_bin.mp3 | کوڑے دان | trash bin
+obj_plant_pot.mp3 | گملا | flower pot
+obj_laptop.mp3 | لیپ ٹاپ | laptop
+obj_monitor.mp3 | کمپیوٹر اسکرین | computer screen
+obj_tv_led.mp3 | ایل ای ڈی | LED / TV screen
+obj_whiteboard.mp3 | وائٹ بورڈ | whiteboard
+obj_projector_screen.mp3 | پروجیکٹر اسکرین | projector screen
+obj_cupboard.mp3 | الماری | cupboard
+obj_shelf.mp3 | شیلف | shelf
+obj_bag.mp3 | بیگ | bag
+obj_box.mp3 | ڈبہ | box
+obj_bottle.mp3 | بوتل | bottle
+obj_water_cooler.mp3 | واٹر کولر | water cooler
+obj_fan_stand.mp3 | پنکھا | pedestal fan
+obj_bed.mp3 | بستر | bed
+obj_child.mp3 | بچہ | child
+obj_unknown.mp3 | رکاوٹ | an obstacle
+
+---------- POSITION (6) ----------
+pos_ahead.mp3 | سامنے ہے، | is ahead,
+pos_left.mp3 | بائیں طرف ہے، | is on the left,
+pos_right.mp3 | دائیں طرف ہے، | is on the right,
+pos_ahead_pl.mp3 | سامنے ہیں، | are ahead,
+pos_left_pl.mp3 | بائیں طرف ہیں، | are on the left,
+pos_right_pl.mp3 | دائیں طرف ہیں، | are on the right,
+
+---------- DISTANCE (9) ----------
+steps_1.mp3 | ایک قدم پر۔ | one step away.
+steps_2.mp3 | دو قدم پر۔ | two steps away.
+steps_3.mp3 | تین قدم پر۔ | three steps away.
+steps_4.mp3 | چار قدم پر۔ | four steps away.
+steps_5.mp3 | پانچ قدم پر۔ | five steps away.
+steps_6.mp3 | چھ قدم پر۔ | six steps away.
+steps_7.mp3 | سات قدم پر۔ | seven steps away.
+steps_8.mp3 | آٹھ قدم پر۔ | eight steps away.
+steps_far.mp3 | کافی دور۔ | far away.
+
+---------- MOVE (16) ----------
+move_left_1.mp3 | ایک قدم بائیں ہٹیں۔ | Move one step left.
+move_left_2.mp3 | دو قدم بائیں ہٹیں۔ | Move two steps left.
+move_left_3.mp3 | تین قدم بائیں ہٹیں۔ | Move three steps left.
+move_left_4.mp3 | چار قدم بائیں ہٹیں۔ | Move four steps left.
+move_right_1.mp3 | ایک قدم دائیں ہٹیں۔ | Move one step right.
+move_right_2.mp3 | دو قدم دائیں ہٹیں۔ | Move two steps right.
+move_right_3.mp3 | تین قدم دائیں ہٹیں۔ | Move three steps right.
+move_right_4.mp3 | چار قدم دائیں ہٹیں۔ | Move four steps right.
+go_straight.mp3 | سیدھا چلیں۔ | Walk straight.
+turn_left_slight.mp3 | تھوڑا بائیں مڑیں۔ | Turn slightly left.
+turn_right_slight.mp3 | تھوڑا دائیں مڑیں۔ | Turn slightly right.
+turn_left.mp3 | بائیں مڑیں۔ | Turn left.
+turn_right.mp3 | دائیں مڑیں۔ | Turn right.
+turn_slowly.mp3 | آہستہ سے گھومیں۔ | Turn around slowly.
+move_back.mp3 | ایک قدم پیچھے ہٹیں۔ | Step back.
+slow_down.mp3 | آہستہ چلیں۔ | Walk slowly.
+
+---------- FIND (16) ----------
+cmd_finding_door.mp3 | ٹھیک ہے، دروازہ ڈھونڈ رہی ہوں۔ | Okay, looking for the door.
+cmd_finding_chair.mp3 | ٹھیک ہے، کرسی ڈھونڈ رہی ہوں۔ | Okay, looking for a chair.
+cmd_finding_table.mp3 | ٹھیک ہے، میز ڈھونڈ رہی ہوں۔ | Okay, looking for the table.
+cmd_finding_person.mp3 | ٹھیک ہے، کسی کو ڈھونڈ رہی ہوں۔ | Okay, looking for someone.
+cmd_finding_sofa.mp3 | ٹھیک ہے، صوفہ ڈھونڈ رہی ہوں۔ | Okay, looking for the sofa.
+cmd_finding_trash_bin.mp3 | ٹھیک ہے، کوڑے دان ڈھونڈ رہی ہوں۔ | Okay, looking for the trash bin.
+find_searching.mp3 | ڈھونڈ رہی ہوں، آہستہ سے گھومیں۔ | Searching, turn slowly.
+find_arrived_door.mp3 | آپ دروازے تک پہنچ گئے ہیں۔ | You have reached the door.
+find_arrived_chair.mp3 | آپ کرسی تک پہنچ گئے ہیں۔ | You have reached the chair.
+find_arrived_table.mp3 | آپ میز تک پہنچ گئے ہیں۔ | You have reached the table.
+find_arrived_person.mp3 | آپ ان کے پاس پہنچ گئے ہیں۔ | You have reached them.
+find_arrived_sofa.mp3 | آپ صوفے تک پہنچ گئے ہیں۔ | You have reached the sofa.
+find_arrived_trash_bin.mp3 | آپ کوڑے دان تک پہنچ گئے ہیں۔ | You have reached the trash bin.
+find_lost.mp3 | رکیں، دوبارہ ڈھونڈ رہی ہوں۔ | Stop, searching again.
+find_cancelled.mp3 | ٹھیک ہے، ڈھونڈنا بند کر دیا۔ | Okay, stopped searching.
+find_not_supported.mp3 | معاف کیجیے، یہ چیز میں ابھی نہیں ڈھونڈ سکتی۔ | Sorry, I can't find that yet.
+
+---------- CONNECTOR (2) ----------
+conj_and.mp3 | اور | and
+desc_intro.mp3 | آپ کے آس پاس، | Around you,
+
+---------- SYSTEM (13) ----------
+sys_welcome.mp3 | السلام علیکم، میں راہی ہوں۔ فون سیدھا سامنے کی طرف رکھیں۔ بات کرنے کے لیے اسکرین پر دو بار تھپتھپائیں، اور رہنمائی روکنے کے لیے اسکرین کو دبا کر رکھیں۔ | Hello, I am Raahi. Hold the phone straight ahead. Double-tap to talk, long-press to pause guidance.
+phone_upright.mp3 | فون سیدھا رکھیں۔ | Hold the phone upright.
+sys_path_clear.mp3 | راستہ صاف ہے۔ | The path is clear.
+sys_paused.mp3 | رہنمائی روک دی گئی ہے۔ | Guidance paused.
+sys_resumed.mp3 | رہنمائی دوبارہ شروع۔ | Guidance resumed.
+sys_listening.mp3 | جی؟ | Yes?
+sys_not_understood.mp3 | معاف کیجیے، سمجھ نہیں آیا۔ دوبارہ کہیں۔ | Sorry, I didn't understand. Please say it again.
+sys_nothing_ahead.mp3 | سامنے کچھ نہیں ہے۔ | Nothing ahead.
+sys_connection_lost.mp3 | رابطہ ٹوٹ گیا ہے۔ | Connection lost.
+sys_connected.mp3 | میں تیار ہوں۔ | I'm ready.
+sys_ok.mp3 | ٹھیک ہے۔ | Okay.
+sys_offline.mp3 | انٹرنیٹ نہیں ہے، آواز کے بجائے اشارے استعمال کریں۔ | No internet; use gestures instead of voice.
+sys_low_light.mp3 | روشنی کم ہے، احتیاط سے چلیں۔ | Low light, walk carefully.
+
+TOTAL: 94 clips, ~1543 characters of credits.

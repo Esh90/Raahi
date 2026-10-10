@@ -1,0 +1,1267 @@
+{
+ "version": 1,
+ "clips": [
+  {
+   "id": "obj_person",
+   "file": "obj_person.mp3",
+   "urdu_text": "کوئی شخص",
+   "en": "a person",
+   "category": "object",
+   "duration_ms": 1071,
+   "source": "recorded",
+   "en_file": "en/obj_person.mp3",
+   "en_text": "Someone"
+  },
+  {
+   "id": "obj_chair",
+   "file": "obj_chair.mp3",
+   "urdu_text": "کرسی",
+   "en": "chair",
+   "category": "object",
+   "duration_ms": 688,
+   "source": "recorded",
+   "en_file": "en/obj_chair.mp3",
+   "en_text": "Chair"
+  },
+  {
+   "id": "obj_table",
+   "file": "obj_table.mp3",
+   "urdu_text": "میز",
+   "en": "table",
+   "category": "object",
+   "duration_ms": 661,
+   "source": "recorded",
+   "en_file": "en/obj_table.mp3",
+   "en_text": "Table"
+  },
+  {
+   "id": "obj_desk",
+   "file": "obj_desk.mp3",
+   "urdu_text": "ڈیسک",
+   "en": "desk",
+   "category": "object",
+   "duration_ms": 716,
+   "source": "recorded",
+   "en_file": "en/obj_desk.mp3",
+   "en_text": "Desk"
+  },
+  {
+   "id": "obj_sofa",
+   "file": "obj_sofa.mp3",
+   "urdu_text": "صوفہ",
+   "en": "sofa",
+   "category": "object",
+   "duration_ms": 704,
+   "source": "recorded",
+   "en_file": "en/obj_sofa.mp3",
+   "en_text": "Sofa"
+  },
+  {
+   "id": "obj_bench",
+   "file": "obj_bench.mp3",
+   "urdu_text": "بینچ",
+   "en": "bench",
+   "category": "object",
+   "duration_ms": 668,
+   "source": "recorded",
+   "en_file": "en/obj_bench.mp3",
+   "en_text": "Bench"
+  },
+  {
+   "id": "obj_door",
+   "file": "obj_door.mp3",
+   "urdu_text": "دروازہ",
+   "en": "door",
+   "category": "object",
+   "duration_ms": 733,
+   "source": "recorded",
+   "en_file": "en/obj_door.mp3",
+   "en_text": "Door"
+  },
+  {
+   "id": "obj_glass_door",
+   "file": "obj_glass_door.mp3",
+   "urdu_text": "شیشے کا دروازہ",
+   "en": "glass door",
+   "category": "object",
+   "duration_ms": 1431,
+   "source": "recorded",
+   "en_file": "en/obj_glass_door.mp3",
+   "en_text": "Glass door"
+  },
+  {
+   "id": "obj_window",
+   "file": "obj_window.mp3",
+   "urdu_text": "کھڑکی",
+   "en": "window",
+   "category": "object",
+   "duration_ms": 641,
+   "source": "recorded",
+   "en_file": "en/obj_window.mp3",
+   "en_text": "Window"
+  },
+  {
+   "id": "obj_wall",
+   "file": "obj_wall.mp3",
+   "urdu_text": "دیوار",
+   "en": "wall",
+   "category": "object",
+   "duration_ms": 618,
+   "source": "recorded",
+   "en_file": "en/obj_wall.mp3",
+   "en_text": "Wall"
+  },
+  {
+   "id": "obj_pillar",
+   "file": "obj_pillar.mp3",
+   "urdu_text": "ستون",
+   "en": "pillar",
+   "category": "object",
+   "duration_ms": 643,
+   "source": "recorded",
+   "en_file": "en/obj_pillar.mp3",
+   "en_text": "Pillar"
+  },
+  {
+   "id": "obj_stairs",
+   "file": "obj_stairs.mp3",
+   "urdu_text": "سیڑھیاں",
+   "en": "stairs",
+   "category": "object",
+   "duration_ms": 739,
+   "source": "recorded",
+   "en_file": "en/obj_stairs.mp3",
+   "en_text": "Stairs"
+  },
+  {
+   "id": "obj_trash_bin",
+   "file": "obj_trash_bin.mp3",
+   "urdu_text": "کوڑے دان",
+   "en": "trash bin",
+   "category": "object",
+   "duration_ms": 864,
+   "source": "recorded",
+   "en_file": "en/obj_trash_bin.mp3",
+   "en_text": "Trash bin"
+  },
+  {
+   "id": "obj_plant_pot",
+   "file": "obj_plant_pot.mp3",
+   "urdu_text": "گملا",
+   "en": "flower pot",
+   "category": "object",
+   "duration_ms": 603,
+   "source": "recorded",
+   "en_file": "en/obj_plant_pot.mp3",
+   "en_text": "Flower pot"
+  },
+  {
+   "id": "obj_laptop",
+   "file": "obj_laptop.mp3",
+   "urdu_text": "لیپ ٹاپ",
+   "en": "laptop",
+   "category": "object",
+   "duration_ms": 876,
+   "source": "recorded",
+   "en_file": "en/obj_laptop.mp3",
+   "en_text": "Laptop"
+  },
+  {
+   "id": "obj_monitor",
+   "file": "obj_monitor.mp3",
+   "urdu_text": "کمپیوٹر اسکرین",
+   "en": "computer screen",
+   "category": "object",
+   "duration_ms": 1109,
+   "source": "recorded",
+   "en_file": "en/obj_monitor.mp3",
+   "en_text": "Computer screen"
+  },
+  {
+   "id": "obj_tv_led",
+   "file": "obj_tv_led.mp3",
+   "urdu_text": "ایل ای ڈی",
+   "en": "LED / TV screen",
+   "category": "object",
+   "duration_ms": 1121,
+   "source": "recorded",
+   "en_file": "en/obj_tv_led.mp3",
+   "en_text": "Screen"
+  },
+  {
+   "id": "obj_whiteboard",
+   "file": "obj_whiteboard.mp3",
+   "urdu_text": "وائٹ بورڈ",
+   "en": "whiteboard",
+   "category": "object",
+   "duration_ms": 964,
+   "source": "recorded",
+   "en_file": "en/obj_whiteboard.mp3",
+   "en_text": "Whiteboard"
+  },
+  {
+   "id": "obj_projector_screen",
+   "file": "obj_projector_screen.mp3",
+   "urdu_text": "پروجیکٹر اسکرین",
+   "en": "projector screen",
+   "category": "object",
+   "duration_ms": 1109,
+   "source": "recorded",
+   "en_file": "en/obj_projector_screen.mp3",
+   "en_text": "Projector screen"
+  },
+  {
+   "id": "obj_cupboard",
+   "file": "obj_cupboard.mp3",
+   "urdu_text": "الماری",
+   "en": "cupboard",
+   "category": "object",
+   "duration_ms": 737,
+   "source": "recorded",
+   "en_file": "en/obj_cupboard.mp3",
+   "en_text": "Cupboard"
+  },
+  {
+   "id": "obj_shelf",
+   "file": "obj_shelf.mp3",
+   "urdu_text": "شیلف",
+   "en": "shelf",
+   "category": "object",
+   "duration_ms": 765,
+   "source": "recorded",
+   "en_file": "en/obj_shelf.mp3",
+   "en_text": "Shelf"
+  },
+  {
+   "id": "obj_bag",
+   "file": "obj_bag.mp3",
+   "urdu_text": "بیگ",
+   "en": "bag",
+   "category": "object",
+   "duration_ms": 700,
+   "source": "recorded",
+   "en_file": "en/obj_bag.mp3",
+   "en_text": "Bag"
+  },
+  {
+   "id": "obj_box",
+   "file": "obj_box.mp3",
+   "urdu_text": "ڈبہ",
+   "en": "box",
+   "category": "object",
+   "duration_ms": 705,
+   "source": "recorded",
+   "en_file": "en/obj_box.mp3",
+   "en_text": "Box"
+  },
+  {
+   "id": "obj_bottle",
+   "file": "obj_bottle.mp3",
+   "urdu_text": "بوتل",
+   "en": "bottle",
+   "category": "object",
+   "duration_ms": 733,
+   "source": "recorded",
+   "en_file": "en/obj_bottle.mp3",
+   "en_text": "Bottle"
+  },
+  {
+   "id": "obj_water_cooler",
+   "file": "obj_water_cooler.mp3",
+   "urdu_text": "واٹر کولر",
+   "en": "water cooler",
+   "category": "object",
+   "duration_ms": 932,
+   "source": "recorded",
+   "en_file": "en/obj_water_cooler.mp3",
+   "en_text": "Water cooler"
+  },
+  {
+   "id": "obj_fan_stand",
+   "file": "obj_fan_stand.mp3",
+   "urdu_text": "پنکھا",
+   "en": "pedestal fan",
+   "category": "object",
+   "duration_ms": 576,
+   "source": "recorded",
+   "en_file": "en/obj_fan_stand.mp3",
+   "en_text": "Fan"
+  },
+  {
+   "id": "obj_bed",
+   "file": "obj_bed.mp3",
+   "urdu_text": "بستر",
+   "en": "bed",
+   "category": "object",
+   "duration_ms": 783,
+   "source": "recorded",
+   "en_file": "en/obj_bed.mp3",
+   "en_text": "Bed"
+  },
+  {
+   "id": "obj_child",
+   "file": "obj_child.mp3",
+   "urdu_text": "بچہ",
+   "en": "child",
+   "category": "object",
+   "duration_ms": 692,
+   "source": "recorded",
+   "en_file": "en/obj_child.mp3",
+   "en_text": "A child"
+  },
+  {
+   "id": "obj_unknown",
+   "file": "obj_unknown.mp3",
+   "urdu_text": "رکاوٹ",
+   "en": "an obstacle",
+   "category": "object",
+   "duration_ms": 889,
+   "source": "recorded",
+   "en_file": "en/obj_unknown.mp3",
+   "en_text": "Obstacle"
+  },
+  {
+   "id": "pos_ahead",
+   "file": "pos_ahead.mp3",
+   "urdu_text": "سامنے ہے،",
+   "en": "is ahead,",
+   "category": "position",
+   "duration_ms": 902,
+   "source": "recorded",
+   "en_file": "en/pos_ahead.mp3",
+   "en_text": "ahead,"
+  },
+  {
+   "id": "pos_left",
+   "file": "pos_left.mp3",
+   "urdu_text": "بائیں طرف ہے،",
+   "en": "is on the left,",
+   "category": "position",
+   "duration_ms": 1115,
+   "source": "recorded",
+   "en_file": "en/pos_left.mp3",
+   "en_text": "on your left,"
+  },
+  {
+   "id": "pos_right",
+   "file": "pos_right.mp3",
+   "urdu_text": "دائیں طرف ہے،",
+   "en": "is on the right,",
+   "category": "position",
+   "duration_ms": 1128,
+   "source": "recorded",
+   "en_file": "en/pos_right.mp3",
+   "en_text": "on your right,"
+  },
+  {
+   "id": "pos_ahead_pl",
+   "file": "pos_ahead_pl.mp3",
+   "urdu_text": "سامنے ہیں،",
+   "en": "are ahead,",
+   "category": "position",
+   "duration_ms": 925,
+   "source": "recorded",
+   "en_file": "en/pos_ahead_pl.mp3",
+   "en_text": "ahead,"
+  },
+  {
+   "id": "pos_left_pl",
+   "file": "pos_left_pl.mp3",
+   "urdu_text": "بائیں طرف ہیں،",
+   "en": "are on the left,",
+   "category": "position",
+   "duration_ms": 1157,
+   "source": "recorded",
+   "en_file": "en/pos_left_pl.mp3",
+   "en_text": "on your left,"
+  },
+  {
+   "id": "pos_right_pl",
+   "file": "pos_right_pl.mp3",
+   "urdu_text": "دائیں طرف ہیں،",
+   "en": "are on the right,",
+   "category": "position",
+   "duration_ms": 1153,
+   "source": "recorded",
+   "en_file": "en/pos_right_pl.mp3",
+   "en_text": "on your right,"
+  },
+  {
+   "id": "steps_1",
+   "file": "steps_1.mp3",
+   "urdu_text": "ایک قدم پر۔",
+   "en": "one step away.",
+   "category": "distance",
+   "duration_ms": 1070,
+   "source": "recorded",
+   "en_file": "en/steps_1.mp3",
+   "en_text": "one step away."
+  },
+  {
+   "id": "steps_2",
+   "file": "steps_2.mp3",
+   "urdu_text": "دو قدم پر۔",
+   "en": "two steps away.",
+   "category": "distance",
+   "duration_ms": 1150,
+   "source": "recorded",
+   "en_file": "en/steps_2.mp3",
+   "en_text": "two steps away."
+  },
+  {
+   "id": "steps_3",
+   "file": "steps_3.mp3",
+   "urdu_text": "تین قدم پر۔",
+   "en": "three steps away.",
+   "category": "distance",
+   "duration_ms": 1167,
+   "source": "recorded",
+   "en_file": "en/steps_3.mp3",
+   "en_text": "three steps away."
+  },
+  {
+   "id": "steps_4",
+   "file": "steps_4.mp3",
+   "urdu_text": "چار قدم پر۔",
+   "en": "four steps away.",
+   "category": "distance",
+   "duration_ms": 1198,
+   "source": "recorded",
+   "en_file": "en/steps_4.mp3",
+   "en_text": "four steps away."
+  },
+  {
+   "id": "steps_5",
+   "file": "steps_5.mp3",
+   "urdu_text": "پانچ قدم پر۔",
+   "en": "five steps away.",
+   "category": "distance",
+   "duration_ms": 1195,
+   "source": "recorded",
+   "en_file": "en/steps_5.mp3",
+   "en_text": "five steps away."
+  },
+  {
+   "id": "steps_6",
+   "file": "steps_6.mp3",
+   "urdu_text": "چھ قدم پر۔",
+   "en": "six steps away.",
+   "category": "distance",
+   "duration_ms": 1150,
+   "source": "recorded",
+   "en_file": "en/steps_6.mp3",
+   "en_text": "six steps away."
+  },
+  {
+   "id": "steps_7",
+   "file": "steps_7.mp3",
+   "urdu_text": "سات قدم پر۔",
+   "en": "seven steps away.",
+   "category": "distance",
+   "duration_ms": 1327,
+   "source": "recorded",
+   "en_file": "en/steps_7.mp3",
+   "en_text": "seven steps away."
+  },
+  {
+   "id": "steps_8",
+   "file": "steps_8.mp3",
+   "urdu_text": "آٹھ قدم پر۔",
+   "en": "eight steps away.",
+   "category": "distance",
+   "duration_ms": 1204,
+   "source": "recorded",
+   "en_file": "en/steps_8.mp3",
+   "en_text": "eight steps away."
+  },
+  {
+   "id": "steps_far",
+   "file": "steps_far.mp3",
+   "urdu_text": "کافی دور۔",
+   "en": "far away.",
+   "category": "distance",
+   "duration_ms": 885,
+   "source": "recorded",
+   "en_file": "en/steps_far.mp3",
+   "en_text": "far away."
+  },
+  {
+   "id": "move_left_1",
+   "file": "move_left_1.mp3",
+   "urdu_text": "ایک قدم بائیں ہٹیں۔",
+   "en": "Move one step left.",
+   "category": "move",
+   "duration_ms": 1455,
+   "source": "recorded",
+   "en_file": "en/move_left_1.mp3",
+   "en_text": "Move one step left."
+  },
+  {
+   "id": "move_left_2",
+   "file": "move_left_2.mp3",
+   "urdu_text": "دو قدم بائیں ہٹیں۔",
+   "en": "Move two steps left.",
+   "category": "move",
+   "duration_ms": 1345,
+   "source": "recorded",
+   "en_file": "en/move_left_2.mp3",
+   "en_text": "Move two steps left."
+  },
+  {
+   "id": "move_left_3",
+   "file": "move_left_3.mp3",
+   "urdu_text": "تین قدم بائیں ہٹیں۔",
+   "en": "Move three steps left.",
+   "category": "move",
+   "duration_ms": 1482,
+   "source": "recorded",
+   "en_file": "en/move_left_3.mp3",
+   "en_text": "Move three steps left."
+  },
+  {
+   "id": "move_left_4",
+   "file": "move_left_4.mp3",
+   "urdu_text": "چار قدم بائیں ہٹیں۔",
+   "en": "Move four steps left.",
+   "category": "move",
+   "duration_ms": 1433,
+   "source": "recorded",
+   "en_file": "en/move_left_4.mp3",
+   "en_text": "Move four steps left."
+  },
+  {
+   "id": "move_right_1",
+   "file": "move_right_1.mp3",
+   "urdu_text": "ایک قدم دائیں ہٹیں۔",
+   "en": "Move one step right.",
+   "category": "move",
+   "duration_ms": 1405,
+   "source": "recorded",
+   "en_file": "en/move_right_1.mp3",
+   "en_text": "Move one step right."
+  },
+  {
+   "id": "move_right_2",
+   "file": "move_right_2.mp3",
+   "urdu_text": "دو قدم دائیں ہٹیں۔",
+   "en": "Move two steps right.",
+   "category": "move",
+   "duration_ms": 1386,
+   "source": "recorded",
+   "en_file": "en/move_right_2.mp3",
+   "en_text": "Move two steps right."
+  },
+  {
+   "id": "move_right_3",
+   "file": "move_right_3.mp3",
+   "urdu_text": "تین قدم دائیں ہٹیں۔",
+   "en": "Move three steps right.",
+   "category": "move",
+   "duration_ms": 1482,
+   "source": "recorded",
+   "en_file": "en/move_right_3.mp3",
+   "en_text": "Move three steps right."
+  },
+  {
+   "id": "move_right_4",
+   "file": "move_right_4.mp3",
+   "urdu_text": "چار قدم دائیں ہٹیں۔",
+   "en": "Move four steps right.",
+   "category": "move",
+   "duration_ms": 1403,
+   "source": "recorded",
+   "en_file": "en/move_right_4.mp3",
+   "en_text": "Move four steps right."
+  },
+  {
+   "id": "go_straight",
+   "file": "go_straight.mp3",
+   "urdu_text": "سیدھا چلیں۔",
+   "en": "Walk straight.",
+   "category": "move",
+   "duration_ms": 940,
+   "source": "recorded",
+   "en_file": "en/go_straight.mp3",
+   "en_text": "Walk straight ahead."
+  },
+  {
+   "id": "turn_left_slight",
+   "file": "turn_left_slight.mp3",
+   "urdu_text": "تھوڑا بائیں مڑیں۔",
+   "en": "Turn slightly left.",
+   "category": "move",
+   "duration_ms": 1092,
+   "source": "recorded",
+   "en_file": "en/turn_left_slight.mp3",
+   "en_text": "Turn slightly left."
+  },
+  {
+   "id": "turn_right_slight",
+   "file": "turn_right_slight.mp3",
+   "urdu_text": "تھوڑا دائیں مڑیں۔",
+   "en": "Turn slightly right.",
+   "category": "move",
+   "duration_ms": 1183,
+   "source": "recorded",
+   "en_file": "en/turn_right_slight.mp3",
+   "en_text": "Turn slightly right."
+  },
+  {
+   "id": "turn_left",
+   "file": "turn_left.mp3",
+   "urdu_text": "بائیں مڑیں۔",
+   "en": "Turn left.",
+   "category": "move",
+   "duration_ms": 820,
+   "source": "recorded",
+   "en_file": "en/turn_left.mp3",
+   "en_text": "Turn left."
+  },
+  {
+   "id": "turn_right",
+   "file": "turn_right.mp3",
+   "urdu_text": "دائیں مڑیں۔",
+   "en": "Turn right.",
+   "category": "move",
+   "duration_ms": 852,
+   "source": "recorded",
+   "en_file": "en/turn_right.mp3",
+   "en_text": "Turn right."
+  },
+  {
+   "id": "turn_slowly",
+   "file": "turn_slowly.mp3",
+   "urdu_text": "آہستہ سے گھومیں۔",
+   "en": "Turn around slowly.",
+   "category": "move",
+   "duration_ms": 1382,
+   "source": "recorded",
+   "en_file": "en/turn_slowly.mp3",
+   "en_text": "Turn around slowly."
+  },
+  {
+   "id": "move_back",
+   "file": "move_back.mp3",
+   "urdu_text": "ایک قدم پیچھے ہٹیں۔",
+   "en": "Step back.",
+   "category": "move",
+   "duration_ms": 1538,
+   "source": "recorded",
+   "en_file": "en/move_back.mp3",
+   "en_text": "Take one step back."
+  },
+  {
+   "id": "slow_down",
+   "file": "slow_down.mp3",
+   "urdu_text": "آہستہ چلیں۔",
+   "en": "Walk slowly.",
+   "category": "move",
+   "duration_ms": 1047,
+   "source": "recorded",
+   "en_file": "en/slow_down.mp3",
+   "en_text": "Walk slowly."
+  },
+  {
+   "id": "urg_stop",
+   "file": "urg_stop.mp3",
+   "urdu_text": "رُک جائیں!",
+   "en": "Stop!",
+   "category": "urgent",
+   "duration_ms": 766,
+   "source": "recorded",
+   "en_file": "en/urg_stop.mp3",
+   "en_text": "Stop!"
+  },
+  {
+   "id": "urg_stop_obstacle",
+   "file": "urg_stop_obstacle.mp3",
+   "urdu_text": "رُک جائیں، سامنے رکاوٹ ہے!",
+   "en": "Stop, obstacle ahead!",
+   "category": "urgent",
+   "duration_ms": 2568,
+   "source": "recorded",
+   "en_file": "en/urg_stop_obstacle.mp3",
+   "en_text": "Stop, obstacle ahead!"
+  },
+  {
+   "id": "urg_stop_person",
+   "file": "urg_stop_person.mp3",
+   "urdu_text": "رُک جائیں، سامنے کوئی ہے!",
+   "en": "Stop, someone is ahead!",
+   "category": "urgent",
+   "duration_ms": 2303,
+   "source": "recorded",
+   "en_file": "en/urg_stop_person.mp3",
+   "en_text": "Stop, someone is ahead!"
+  },
+  {
+   "id": "cmd_finding_door",
+   "file": "cmd_finding_door.mp3",
+   "urdu_text": "ٹھیک ہے، دروازہ ڈھونڈ رہی ہوں۔",
+   "en": "Okay, looking for the door.",
+   "category": "find",
+   "duration_ms": 2233,
+   "source": "recorded",
+   "en_file": "en/cmd_finding_door.mp3",
+   "en_text": "Okay, looking for the door."
+  },
+  {
+   "id": "cmd_finding_chair",
+   "file": "cmd_finding_chair.mp3",
+   "urdu_text": "ٹھیک ہے، کرسی ڈھونڈ رہی ہوں۔",
+   "en": "Okay, looking for a chair.",
+   "category": "find",
+   "duration_ms": 1908,
+   "source": "recorded",
+   "en_file": "en/cmd_finding_chair.mp3",
+   "en_text": "Okay, looking for a chair."
+  },
+  {
+   "id": "cmd_finding_table",
+   "file": "cmd_finding_table.mp3",
+   "urdu_text": "ٹھیک ہے، میز ڈھونڈ رہی ہوں۔",
+   "en": "Okay, looking for the table.",
+   "category": "find",
+   "duration_ms": 1865,
+   "source": "recorded",
+   "en_file": "en/cmd_finding_table.mp3",
+   "en_text": "Okay, looking for the table."
+  },
+  {
+   "id": "cmd_finding_person",
+   "file": "cmd_finding_person.mp3",
+   "urdu_text": "ٹھیک ہے، کسی کو ڈھونڈ رہی ہوں۔",
+   "en": "Okay, looking for someone.",
+   "category": "find",
+   "duration_ms": 1916,
+   "source": "recorded",
+   "en_file": "en/cmd_finding_person.mp3",
+   "en_text": "Okay, looking for someone."
+  },
+  {
+   "id": "cmd_finding_sofa",
+   "file": "cmd_finding_sofa.mp3",
+   "urdu_text": "ٹھیک ہے، صوفہ ڈھونڈ رہی ہوں۔",
+   "en": "Okay, looking for the sofa.",
+   "category": "find",
+   "duration_ms": 1935,
+   "source": "recorded",
+   "en_file": "en/cmd_finding_sofa.mp3",
+   "en_text": "Okay, looking for the sofa."
+  },
+  {
+   "id": "cmd_finding_trash_bin",
+   "file": "cmd_finding_trash_bin.mp3",
+   "urdu_text": "ٹھیک ہے، کوڑے دان ڈھونڈ رہی ہوں۔",
+   "en": "Okay, looking for the trash bin.",
+   "category": "find",
+   "duration_ms": 2113,
+   "source": "recorded",
+   "en_file": "en/cmd_finding_trash_bin.mp3",
+   "en_text": "Okay, looking for the trash bin."
+  },
+  {
+   "id": "find_searching",
+   "file": "find_searching.mp3",
+   "urdu_text": "ڈھونڈ رہی ہوں، آہستہ سے گھومیں۔",
+   "en": "Searching, turn slowly.",
+   "category": "find",
+   "duration_ms": 2528,
+   "source": "recorded",
+   "en_file": "en/find_searching.mp3",
+   "en_text": "Searching, turn slowly."
+  },
+  {
+   "id": "find_arrived_door",
+   "file": "find_arrived_door.mp3",
+   "urdu_text": "آپ دروازے تک پہنچ گئے ہیں۔",
+   "en": "You have reached the door.",
+   "category": "find",
+   "duration_ms": 1812,
+   "source": "recorded",
+   "en_file": "en/find_arrived_door.mp3",
+   "en_text": "You have reached the door."
+  },
+  {
+   "id": "find_arrived_chair",
+   "file": "find_arrived_chair.mp3",
+   "urdu_text": "آپ کرسی تک پہنچ گئے ہیں۔",
+   "en": "You have reached the chair.",
+   "category": "find",
+   "duration_ms": 1763,
+   "source": "recorded",
+   "en_file": "en/find_arrived_chair.mp3",
+   "en_text": "You have reached the chair."
+  },
+  {
+   "id": "find_arrived_table",
+   "file": "find_arrived_table.mp3",
+   "urdu_text": "آپ میز تک پہنچ گئے ہیں۔",
+   "en": "You have reached the table.",
+   "category": "find",
+   "duration_ms": 1685,
+   "source": "recorded",
+   "en_file": "en/find_arrived_table.mp3",
+   "en_text": "You have reached the table."
+  },
+  {
+   "id": "find_arrived_person",
+   "file": "find_arrived_person.mp3",
+   "urdu_text": "آپ ان کے پاس پہنچ گئے ہیں۔",
+   "en": "You have reached them.",
+   "category": "find",
+   "duration_ms": 1850,
+   "source": "recorded",
+   "en_file": "en/find_arrived_person.mp3",
+   "en_text": "You have reached them."
+  },
+  {
+   "id": "find_arrived_sofa",
+   "file": "find_arrived_sofa.mp3",
+   "urdu_text": "آپ صوفے تک پہنچ گئے ہیں۔",
+   "en": "You have reached the sofa.",
+   "category": "find",
+   "duration_ms": 1750,
+   "source": "recorded",
+   "en_file": "en/find_arrived_sofa.mp3",
+   "en_text": "You have reached the sofa."
+  },
+  {
+   "id": "find_arrived_trash_bin",
+   "file": "find_arrived_trash_bin.mp3",
+   "urdu_text": "آپ کوڑے دان تک پہنچ گئے ہیں۔",
+   "en": "You have reached the trash bin.",
+   "category": "find",
+   "duration_ms": 2005,
+   "source": "recorded",
+   "en_file": "en/find_arrived_trash_bin.mp3",
+   "en_text": "You have reached the trash bin."
+  },
+  {
+   "id": "find_lost",
+   "file": "find_lost.mp3",
+   "urdu_text": "رکیں، دوبارہ ڈھونڈ رہی ہوں۔",
+   "en": "Stop, searching again.",
+   "category": "find",
+   "duration_ms": 2177,
+   "source": "recorded",
+   "en_file": "en/find_lost.mp3",
+   "en_text": "Stop, searching again."
+  },
+  {
+   "id": "find_cancelled",
+   "file": "find_cancelled.mp3",
+   "urdu_text": "ٹھیک ہے، ڈھونڈنا بند کر دیا۔",
+   "en": "Okay, stopped searching.",
+   "category": "find",
+   "duration_ms": 2175,
+   "source": "recorded",
+   "en_file": "en/find_cancelled.mp3",
+   "en_text": "Okay, stopped searching."
+  },
+  {
+   "id": "find_not_supported",
+   "file": "find_not_supported.mp3",
+   "urdu_text": "معاف کیجیے، یہ چیز میں ابھی نہیں ڈھونڈ سکتی۔",
+   "en": "Sorry, I can't find that yet.",
+   "category": "find",
+   "duration_ms": 3007,
+   "source": "recorded",
+   "en_file": "en/find_not_supported.mp3",
+   "en_text": "Sorry, I can't find that yet."
+  },
+  {
+   "id": "conj_and",
+   "file": "conj_and.mp3",
+   "urdu_text": "اور",
+   "en": "and",
+   "category": "connector",
+   "duration_ms": 550,
+   "source": "recorded",
+   "en_file": "en/conj_and.mp3",
+   "en_text": "and"
+  },
+  {
+   "id": "desc_intro",
+   "file": "desc_intro.mp3",
+   "urdu_text": "آپ کے آس پاس،",
+   "en": "Around you,",
+   "category": "connector",
+   "duration_ms": 1452,
+   "source": "recorded",
+   "en_file": "en/desc_intro.mp3",
+   "en_text": "Around you,"
+  },
+  {
+   "id": "sys_welcome",
+   "file": "sys_welcome.mp3",
+   "urdu_text": "السلام علیکم، میں راہی ہوں۔ فون سیدھا سامنے کی طرف رکھیں۔ بات کرنے کے لیے اسکرین پر دو بار تھپتھپائیں، اور رہنمائی روکنے کے لیے اسکرین کو دبا کر رکھیں۔",
+   "en": "Hello, I am Raahi. Hold the phone straight ahead. Double-tap to talk, long-press to pause guidance.",
+   "category": "system",
+   "duration_ms": 11856,
+   "source": "recorded",
+   "en_file": "en/sys_welcome.mp3",
+   "en_text": "Hello, I am Raahi. Hold your phone straight in front of you. Double-tap the screen to talk, and press and hold to pause guidance."
+  },
+  {
+   "id": "phone_upright",
+   "file": "phone_upright.mp3",
+   "urdu_text": "فون سیدھا رکھیں۔",
+   "en": "Hold the phone upright.",
+   "category": "system",
+   "duration_ms": 1688,
+   "source": "recorded",
+   "en_file": "en/phone_upright.mp3",
+   "en_text": "Hold the phone upright."
+  },
+  {
+   "id": "sys_path_clear",
+   "file": "sys_path_clear.mp3",
+   "urdu_text": "راستہ صاف ہے۔",
+   "en": "The path is clear.",
+   "category": "system",
+   "duration_ms": 1422,
+   "source": "recorded",
+   "en_file": "en/sys_path_clear.mp3",
+   "en_text": "The path is clear."
+  },
+  {
+   "id": "sys_paused",
+   "file": "sys_paused.mp3",
+   "urdu_text": "رہنمائی روک دی گئی ہے۔",
+   "en": "Guidance paused.",
+   "category": "system",
+   "duration_ms": 1804,
+   "source": "recorded",
+   "en_file": "en/sys_paused.mp3",
+   "en_text": "Guidance paused."
+  },
+  {
+   "id": "sys_resumed",
+   "file": "sys_resumed.mp3",
+   "urdu_text": "رہنمائی دوبارہ شروع۔",
+   "en": "Guidance resumed.",
+   "category": "system",
+   "duration_ms": 1842,
+   "source": "recorded",
+   "en_file": "en/sys_resumed.mp3",
+   "en_text": "Guidance resumed."
+  },
+  {
+   "id": "sys_listening",
+   "file": "sys_listening.mp3",
+   "urdu_text": "جی؟",
+   "en": "Yes?",
+   "category": "system",
+   "duration_ms": 483,
+   "source": "recorded",
+   "en_file": "en/sys_listening.mp3",
+   "en_text": "Yes?"
+  },
+  {
+   "id": "sys_not_understood",
+   "file": "sys_not_understood.mp3",
+   "urdu_text": "معاف کیجیے، سمجھ نہیں آیا۔ دوبارہ کہیں۔",
+   "en": "Sorry, I didn't understand. Please say it again.",
+   "category": "system",
+   "duration_ms": 3308,
+   "source": "recorded",
+   "en_file": "en/sys_not_understood.mp3",
+   "en_text": "Sorry, I didn't catch that, please say it again."
+  },
+  {
+   "id": "sys_nothing_ahead",
+   "file": "sys_nothing_ahead.mp3",
+   "urdu_text": "سامنے کچھ نہیں ہے۔",
+   "en": "Nothing ahead.",
+   "category": "system",
+   "duration_ms": 1475,
+   "source": "recorded",
+   "en_file": "en/sys_nothing_ahead.mp3",
+   "en_text": "Nothing ahead."
+  },
+  {
+   "id": "sys_connection_lost",
+   "file": "sys_connection_lost.mp3",
+   "urdu_text": "رابطہ ٹوٹ گیا ہے۔",
+   "en": "Connection lost.",
+   "category": "system",
+   "duration_ms": 1592,
+   "source": "recorded",
+   "en_file": "en/sys_connection_lost.mp3",
+   "en_text": "Connection lost."
+  },
+  {
+   "id": "sys_connected",
+   "file": "sys_connected.mp3",
+   "urdu_text": "میں تیار ہوں۔",
+   "en": "I'm ready.",
+   "category": "system",
+   "duration_ms": 1038,
+   "source": "recorded",
+   "en_file": "en/sys_connected.mp3",
+   "en_text": "I'm ready."
+  },
+  {
+   "id": "sys_ok",
+   "file": "sys_ok.mp3",
+   "urdu_text": "ٹھیک ہے۔",
+   "en": "Okay.",
+   "category": "system",
+   "duration_ms": 687,
+   "source": "recorded",
+   "en_file": "en/sys_ok.mp3",
+   "en_text": "Okay."
+  },
+  {
+   "id": "sys_offline",
+   "file": "sys_offline.mp3",
+   "urdu_text": "انٹرنیٹ نہیں ہے، آواز کے بجائے اشارے استعمال کریں۔",
+   "en": "No internet; use gestures instead of voice.",
+   "category": "system",
+   "duration_ms": 4599,
+   "source": "recorded",
+   "en_file": "en/sys_offline.mp3",
+   "en_text": "No internet, please use gestures instead of voice."
+  },
+  {
+   "id": "sys_low_light",
+   "file": "sys_low_light.mp3",
+   "urdu_text": "روشنی کم ہے، احتیاط سے چلیں۔",
+   "en": "Low light, walk carefully.",
+   "category": "system",
+   "duration_ms": 2859,
+   "source": "recorded",
+   "en_file": "en/sys_low_light.mp3",
+   "en_text": "Low light, walk carefully."
+  },
+  {
+   "id": "ear_listen",
+   "file": "ear_listen.mp3",
+   "urdu_text": "",
+   "en": "(beep: listening)",
+   "category": "earcon",
+   "duration_ms": 190,
+   "source": "generated",
+   "en_file": "en/ear_listen.mp3",
+   "en_text": "(beep: listening)"
+  },
+  {
+   "id": "ear_alert",
+   "file": "ear_alert.mp3",
+   "urdu_text": "",
+   "en": "(beep: alert)",
+   "category": "earcon",
+   "duration_ms": 260,
+   "source": "generated",
+   "en_file": "en/ear_alert.mp3",
+   "en_text": "(beep: alert)"
+  },
+  {
+   "id": "live_printer",
+   "file": "live/live_printer.mp3",
+   "urdu_text": "",
+   "en": "live_printer",
+   "category": "live",
+   "source": "live"
+  }
+ ],
+ "classes": {
+  "person": {
+   "clip": "obj_person",
+   "plural": false,
+   "height_m": 1.65,
+   "min_conf": 0.4,
+   "findable": true
+  },
+  "chair": {
+   "clip": "obj_chair",
+   "plural": false,
+   "height_m": 0.9,
+   "min_conf": 0.35,
+   "findable": true
+  },
+  "table": {
+   "clip": "obj_table",
+   "plural": false,
+   "height_m": 0.75,
+   "min_conf": 0.35,
+   "findable": true
+  },
+  "desk": {
+   "clip": "obj_desk",
+   "plural": false,
+   "height_m": 0.75,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "sofa": {
+   "clip": "obj_sofa",
+   "plural": false,
+   "height_m": 0.85,
+   "min_conf": 0.35,
+   "findable": true
+  },
+  "bench": {
+   "clip": "obj_bench",
+   "plural": false,
+   "height_m": 0.45,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "door": {
+   "clip": "obj_door",
+   "plural": false,
+   "height_m": 2.0,
+   "min_conf": 0.3,
+   "findable": true
+  },
+  "glass_door": {
+   "clip": "obj_glass_door",
+   "plural": false,
+   "height_m": 2.0,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "window": {
+   "clip": "obj_window",
+   "plural": false,
+   "height_m": null,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "wall": {
+   "clip": "obj_wall",
+   "plural": false,
+   "height_m": null,
+   "min_conf": 0.5,
+   "findable": false
+  },
+  "pillar": {
+   "clip": "obj_pillar",
+   "plural": false,
+   "height_m": null,
+   "min_conf": 0.4,
+   "findable": false
+  },
+  "stairs": {
+   "clip": "obj_stairs",
+   "plural": true,
+   "height_m": null,
+   "min_conf": 0.4,
+   "findable": false
+  },
+  "trash_bin": {
+   "clip": "obj_trash_bin",
+   "plural": false,
+   "height_m": 0.6,
+   "min_conf": 0.3,
+   "findable": true
+  },
+  "plant_pot": {
+   "clip": "obj_plant_pot",
+   "plural": false,
+   "height_m": 0.5,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "laptop": {
+   "clip": "obj_laptop",
+   "plural": false,
+   "height_m": 0.25,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "monitor": {
+   "clip": "obj_monitor",
+   "plural": false,
+   "height_m": 0.4,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "tv_led": {
+   "clip": "obj_tv_led",
+   "plural": false,
+   "height_m": 0.7,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "whiteboard": {
+   "clip": "obj_whiteboard",
+   "plural": false,
+   "height_m": 1.2,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "projector_screen": {
+   "clip": "obj_projector_screen",
+   "plural": false,
+   "height_m": null,
+   "min_conf": 0.4,
+   "findable": false
+  },
+  "cupboard": {
+   "clip": "obj_cupboard",
+   "plural": false,
+   "height_m": 1.8,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "shelf": {
+   "clip": "obj_shelf",
+   "plural": false,
+   "height_m": 1.8,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "bag": {
+   "clip": "obj_bag",
+   "plural": false,
+   "height_m": 0.45,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "box": {
+   "clip": "obj_box",
+   "plural": false,
+   "height_m": 0.4,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "bottle": {
+   "clip": "obj_bottle",
+   "plural": false,
+   "height_m": 0.25,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "water_cooler": {
+   "clip": "obj_water_cooler",
+   "plural": false,
+   "height_m": 1.0,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "fan_stand": {
+   "clip": "obj_fan_stand",
+   "plural": false,
+   "height_m": 1.2,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "bed": {
+   "clip": "obj_bed",
+   "plural": false,
+   "height_m": 0.6,
+   "min_conf": 0.35,
+   "findable": false
+  },
+  "child": {
+   "clip": "obj_child",
+   "plural": false,
+   "height_m": 1.1,
+   "min_conf": 0.6,
+   "findable": false
+  }
+ }
+}

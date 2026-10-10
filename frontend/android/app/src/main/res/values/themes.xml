@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="raahi_teal">#0E5E63</color>
+    <color name="raahi_paper">#F7F4EE</color>
+
+    <style name="Theme.Raahi" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/raahi_teal</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+</resources>

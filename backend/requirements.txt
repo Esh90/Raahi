@@ -1,0 +1,32 @@
+# Install torch first:
+#   Mac (M2, MPS):      pip3 install torch torchvision
+#   Windows/Linux CPU:  pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# Mac check: python -c "import torch; print(torch.backends.mps.is_available())"
+fastapi>=0.110
+uvicorn[standard]>=0.27
+websockets>=12.0
+httpx>=0.27
+python-dotenv>=1.0
+opencv-python>=4.8
+numpy>=1.26
+pillow>=10.0
+
+# depth (Member B)
+transformers>=4.45.0
+huggingface_hub>=0.24
+
+# detection (Esha)
+ultralytics>=8.4.170
+onnx
+onnxruntime
+ai-edge-litert; platform_system != 'Darwin'
+
+# voice (Esha)
+elevenlabs>=1.0
+rapidfuzz>=3.0
+pydub>=0.25
+audioop-lts; python_version >= "3.13"
+imageio-ffmpeg
+sounddevice
+
+pytest>=8.0

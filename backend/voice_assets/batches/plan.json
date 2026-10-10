@@ -1,0 +1,90 @@
+{
+ "01": [
+  "obj_cupboard",
+  "obj_shelf",
+  "obj_bag",
+  "obj_box",
+  "obj_bottle",
+  "obj_water_cooler",
+  "obj_fan_stand",
+  "obj_bed",
+  "obj_child",
+  "obj_unknown"
+ ],
+ "02": [
+  "pos_ahead",
+  "pos_left",
+  "pos_right",
+  "pos_ahead_pl",
+  "pos_left_pl",
+  "pos_right_pl",
+  "steps_1",
+  "steps_2",
+  "steps_3",
+  "steps_4",
+  "steps_5",
+  "steps_6",
+  "steps_7",
+  "steps_8"
+ ],
+ "03": [
+  "steps_far",
+  "move_left_1",
+  "move_left_2",
+  "move_left_3",
+  "move_left_4",
+  "move_right_1",
+  "move_right_2",
+  "move_right_3",
+  "move_right_4",
+  "go_straight",
+  "turn_left_slight",
+  "turn_right_slight",
+  "turn_left",
+  "turn_right"
+ ],
+ "04": [
+  "turn_slowly",
+  "move_back",
+  "slow_down",
+  "cmd_finding_door",
+  "cmd_finding_chair",
+  "cmd_finding_table",
+  "cmd_finding_person",
+  "cmd_finding_sofa",
+  "cmd_finding_trash_bin",
+  "find_searching"
+ ],
+ "05": [
+  "find_arrived_door",
+  "find_arrived_chair",
+  "find_arrived_table",
+  "find_arrived_person",
+  "find_arrived_sofa",
+  "find_arrived_trash_bin",
+  "find_lost",
+  "find_cancelled",
+  "find_not_supported"
+ ],
+ "06": [
+  "sys_welcome"
+ ],
+ "07": [
+  "sys_not_understood"
+ ],
+ "08": [
+  "conj_and",
+  "desc_intro",
+  "phone_upright",
+  "sys_path_clear",
+  "sys_paused",
+  "sys_resumed",
+  "sys_listening",
+  "sys_nothing_ahead",
+  "sys_connection_lost",
+  "sys_connected",
+  "sys_ok",
+  "sys_offline",
+  "sys_low_light"
+ ]
+}

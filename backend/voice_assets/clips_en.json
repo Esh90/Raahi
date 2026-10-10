@@ -1,0 +1,392 @@
+{
+ "_doc": "English voice clips (female, ElevenLabs Eleven v3). Same ids as clips.json. Recorded in batches (voice_assets/batches_en/), split by voice_assets/english.py. 'copy_of' = no own recording.",
+ "clips": {
+  "obj_person": {
+   "text": "Someone"
+  },
+  "obj_chair": {
+   "text": "Chair"
+  },
+  "obj_table": {
+   "text": "Table"
+  },
+  "obj_desk": {
+   "text": "Desk"
+  },
+  "obj_sofa": {
+   "text": "Sofa"
+  },
+  "obj_bench": {
+   "text": "Bench"
+  },
+  "obj_door": {
+   "text": "Door"
+  },
+  "obj_glass_door": {
+   "text": "Glass door"
+  },
+  "obj_window": {
+   "text": "Window"
+  },
+  "obj_wall": {
+   "text": "Wall"
+  },
+  "obj_pillar": {
+   "text": "Pillar"
+  },
+  "obj_stairs": {
+   "text": "Stairs"
+  },
+  "obj_trash_bin": {
+   "text": "Trash bin"
+  },
+  "obj_plant_pot": {
+   "text": "Flower pot"
+  },
+  "obj_laptop": {
+   "text": "Laptop"
+  },
+  "obj_monitor": {
+   "text": "Computer screen"
+  },
+  "obj_tv_led": {
+   "text": "Screen"
+  },
+  "obj_whiteboard": {
+   "text": "Whiteboard"
+  },
+  "obj_projector_screen": {
+   "text": "Projector screen"
+  },
+  "obj_cupboard": {
+   "text": "Cupboard"
+  },
+  "obj_shelf": {
+   "text": "Shelf"
+  },
+  "obj_bag": {
+   "text": "Bag"
+  },
+  "obj_box": {
+   "text": "Box"
+  },
+  "obj_bottle": {
+   "text": "Bottle"
+  },
+  "obj_water_cooler": {
+   "text": "Water cooler"
+  },
+  "obj_fan_stand": {
+   "text": "Fan"
+  },
+  "obj_bed": {
+   "text": "Bed"
+  },
+  "obj_child": {
+   "text": "A child"
+  },
+  "obj_unknown": {
+   "text": "Obstacle"
+  },
+  "pos_ahead": {
+   "text": "ahead,"
+  },
+  "pos_left": {
+   "text": "on your left,"
+  },
+  "pos_right": {
+   "text": "on your right,"
+  },
+  "steps_1": {
+   "text": "one step away."
+  },
+  "steps_2": {
+   "text": "two steps away."
+  },
+  "steps_3": {
+   "text": "three steps away."
+  },
+  "steps_4": {
+   "text": "four steps away."
+  },
+  "steps_5": {
+   "text": "five steps away."
+  },
+  "steps_6": {
+   "text": "six steps away."
+  },
+  "steps_7": {
+   "text": "seven steps away."
+  },
+  "steps_8": {
+   "text": "eight steps away."
+  },
+  "steps_far": {
+   "text": "far away."
+  },
+  "move_left_1": {
+   "text": "Move one step left."
+  },
+  "move_left_2": {
+   "text": "Move two steps left."
+  },
+  "move_left_3": {
+   "text": "Move three steps left."
+  },
+  "move_left_4": {
+   "text": "Move four steps left."
+  },
+  "move_right_1": {
+   "text": "Move one step right."
+  },
+  "move_right_2": {
+   "text": "Move two steps right."
+  },
+  "move_right_3": {
+   "text": "Move three steps right."
+  },
+  "move_right_4": {
+   "text": "Move four steps right."
+  },
+  "go_straight": {
+   "text": "Walk straight ahead."
+  },
+  "turn_left_slight": {
+   "text": "Turn slightly left."
+  },
+  "turn_right_slight": {
+   "text": "Turn slightly right."
+  },
+  "turn_left": {
+   "text": "Turn left."
+  },
+  "turn_right": {
+   "text": "Turn right."
+  },
+  "turn_slowly": {
+   "text": "Turn around slowly."
+  },
+  "move_back": {
+   "text": "Take one step back."
+  },
+  "slow_down": {
+   "text": "Walk slowly."
+  },
+  "urg_stop": {
+   "text": "Stop!"
+  },
+  "urg_stop_obstacle": {
+   "text": "Stop, obstacle ahead!"
+  },
+  "urg_stop_person": {
+   "text": "Stop, someone is ahead!"
+  },
+  "cmd_finding_door": {
+   "text": "Okay, looking for the door."
+  },
+  "cmd_finding_chair": {
+   "text": "Okay, looking for a chair."
+  },
+  "cmd_finding_table": {
+   "text": "Okay, looking for the table."
+  },
+  "cmd_finding_person": {
+   "text": "Okay, looking for someone."
+  },
+  "cmd_finding_sofa": {
+   "text": "Okay, looking for the sofa."
+  },
+  "cmd_finding_trash_bin": {
+   "text": "Okay, looking for the trash bin."
+  },
+  "find_searching": {
+   "text": "Searching, turn slowly."
+  },
+  "find_arrived_door": {
+   "text": "You have reached the door."
+  },
+  "find_arrived_chair": {
+   "text": "You have reached the chair."
+  },
+  "find_arrived_table": {
+   "text": "You have reached the table."
+  },
+  "find_arrived_person": {
+   "text": "You have reached them."
+  },
+  "find_arrived_sofa": {
+   "text": "You have reached the sofa."
+  },
+  "find_arrived_trash_bin": {
+   "text": "You have reached the trash bin."
+  },
+  "find_lost": {
+   "text": "Stop, searching again."
+  },
+  "find_cancelled": {
+   "text": "Okay, stopped searching."
+  },
+  "find_not_supported": {
+   "text": "Sorry, I can't find that yet."
+  },
+  "conj_and": {
+   "text": "and"
+  },
+  "desc_intro": {
+   "text": "Around you,"
+  },
+  "phone_upright": {
+   "text": "Hold the phone upright."
+  },
+  "sys_path_clear": {
+   "text": "The path is clear."
+  },
+  "sys_paused": {
+   "text": "Guidance paused."
+  },
+  "sys_resumed": {
+   "text": "Guidance resumed."
+  },
+  "sys_listening": {
+   "text": "Yes?"
+  },
+  "sys_nothing_ahead": {
+   "text": "Nothing ahead."
+  },
+  "sys_connection_lost": {
+   "text": "Connection lost."
+  },
+  "sys_connected": {
+   "text": "I'm ready."
+  },
+  "sys_ok": {
+   "text": "Okay."
+  },
+  "sys_offline": {
+   "text": "No internet, please use gestures instead of voice."
+  },
+  "sys_low_light": {
+   "text": "Low light, walk carefully."
+  },
+  "sys_not_understood": {
+   "text": "Sorry, I didn't catch that, please say it again."
+  },
+  "sys_welcome": {
+   "text": "Hello, I am Raahi. Hold your phone straight in front of you. Double-tap the screen to talk, and press and hold to pause guidance."
+  }
+ },
+ "copies": {
+  "pos_ahead_pl": "pos_ahead",
+  "pos_left_pl": "pos_left",
+  "pos_right_pl": "pos_right"
+ },
+ "batches": {
+  "01": [
+   "obj_person",
+   "obj_chair",
+   "obj_table",
+   "obj_desk",
+   "obj_sofa",
+   "obj_bench",
+   "obj_door",
+   "obj_glass_door",
+   "obj_window",
+   "obj_wall",
+   "obj_pillar",
+   "obj_stairs",
+   "obj_trash_bin",
+   "obj_plant_pot"
+  ],
+  "02": [
+   "obj_laptop",
+   "obj_monitor",
+   "obj_tv_led",
+   "obj_whiteboard",
+   "obj_projector_screen",
+   "obj_cupboard",
+   "obj_shelf",
+   "obj_bag",
+   "obj_box",
+   "obj_bottle",
+   "obj_water_cooler",
+   "obj_fan_stand",
+   "obj_bed",
+   "obj_child",
+   "obj_unknown"
+  ],
+  "03": [
+   "pos_ahead",
+   "pos_left",
+   "pos_right",
+   "steps_1",
+   "steps_2",
+   "steps_3",
+   "steps_4",
+   "steps_5",
+   "steps_6",
+   "steps_7",
+   "steps_8",
+   "steps_far"
+  ],
+  "04": [
+   "move_left_1",
+   "move_left_2",
+   "move_left_3",
+   "move_left_4",
+   "move_right_1",
+   "move_right_2",
+   "move_right_3",
+   "move_right_4",
+   "go_straight",
+   "turn_left_slight",
+   "turn_right_slight",
+   "turn_left",
+   "turn_right",
+   "turn_slowly"
+  ],
+  "05": [
+   "move_back",
+   "slow_down",
+   "urg_stop",
+   "urg_stop_obstacle",
+   "urg_stop_person",
+   "cmd_finding_door",
+   "cmd_finding_chair",
+   "cmd_finding_table",
+   "cmd_finding_person",
+   "cmd_finding_sofa",
+   "cmd_finding_trash_bin",
+   "find_searching"
+  ],
+  "06": [
+   "find_arrived_door",
+   "find_arrived_chair",
+   "find_arrived_table",
+   "find_arrived_person",
+   "find_arrived_sofa",
+   "find_arrived_trash_bin",
+   "find_lost",
+   "find_cancelled",
+   "find_not_supported",
+   "conj_and",
+   "desc_intro"
+  ],
+  "07": [
+   "phone_upright",
+   "sys_path_clear",
+   "sys_paused",
+   "sys_resumed",
+   "sys_listening",
+   "sys_nothing_ahead",
+   "sys_connection_lost",
+   "sys_connected",
+   "sys_ok",
+   "sys_offline",
+   "sys_low_light",
+   "sys_not_understood"
+  ],
+  "08": [
+   "sys_welcome"
+  ]
+ }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!--
+        Raahi monogram: cream R + gold swoosh on teal background.
+        Safe zone for adaptive icons: 18dp inset on all sides (viewport 18–90).
+    -->
+
+    <!-- Cream/off-white R letterform -->
+    <path
+        android:fillColor="#F2EEE3"
+        android:pathData="
+            M27,20 L27,88
+            L37,88 L37,62
+            L52,62 L65,88
+            L77,88 L63,61
+            C72,57 78,49 78,39
+            C78,28 69,20 58,20 Z
+            M37,30 L56,30
+            C63,30 68,34 68,39
+            C68,44 63,52 56,52
+            L37,52 Z" />
+
+    <!-- Gold swoosh — sweeps from lower-left leg up to upper-right -->
+    <path
+        android:fillColor="#C9973A"
+        android:pathData="
+            M24,74
+            C34,64 52,52 86,46
+            L84,56
+            C54,62 36,74 30,84 Z" />
+
+</vector>
