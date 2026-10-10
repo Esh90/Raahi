@@ -37,6 +37,12 @@ Raahi complements the white cane; it does not replace it.
 | 🖥️ | **Judge dashboard** | Live camera with detection boxes, colour depth map, left/centre/right zone distances, the sentence being spoken and per-stage latency. |
 | 🔒 | **Privacy** | No accounts. History is stored on the phone only. The ElevenLabs API key never leaves the server; the phone uses single-use tokens. |
 
+## Architecture
+
+![Raahi architecture: Android app and judge dashboard connected to YOLOE-26, Depth Anything V2, the guidance engine, and the announcer, returning one Protocol 5.2 result per frame](docs/architecture.png)
+
+Each camera frame goes through object detection and depth, then the guidance engine and announcer. The reply is one Protocol 5.2 result: Urdu clip IDs, overlay boxes, haptics, and left / centre / right zones. The judge dashboard shows the live camera, depth map, and those distances.
+
 ## How it works
 
 ```
