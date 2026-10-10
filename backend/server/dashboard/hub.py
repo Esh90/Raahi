@@ -6,8 +6,6 @@ import time
 from collections import deque
 
 from fastapi import WebSocket
-
-
 class DashboardHub:
     def __init__(self) -> None:
         self.clients: list[WebSocket] = []
@@ -40,7 +38,6 @@ class DashboardHub:
     def drop(self, ws: WebSocket) -> None:
         if ws in self.clients:
             self.clients.remove(ws)
-
     async def push(
         self,
         frame_jpeg: bytes,
@@ -81,6 +78,4 @@ class DashboardHub:
                 dead.append(ws)
         for ws in dead:
             self.drop(ws)
-
-
 hub = DashboardHub()
