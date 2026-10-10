@@ -21,7 +21,6 @@ try:
     from starlette.websockets import WebSocketDisconnected as _WSGone
 except ImportError:  # pragma: no cover
     _WSGone = WebSocketDisconnect
-
 from server.config import HOST, MOCK, PORT, ROOT
 from server.dashboard.hub import hub
 from server.dashboard.render import annotate, colorize_depth, encode_jpeg
@@ -38,7 +37,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 app.include_router(voice_router)   # Esha: /scribe-token, /voice/scribe-config, /clips/manifest.json, /clips/<id>.mp3
 
 DASH_DIR = Path(__file__).resolve().parent / "dashboard"
@@ -47,7 +45,6 @@ _engine = GuidanceEngine()
 _last_depth: np.ndarray | None = None
 _depth_ms_last = 0
 _ready = False
-
 
 @app.on_event("startup")
 async def _startup() -> None:
@@ -72,7 +69,6 @@ def health():
         "depth": depth_status(),
     }
 
-
 @app.api_route("/calibrate", methods=["GET", "POST"])
 def calibrate_depth(tape_m: float):
     """Fit a global metre scale from one tape reading vs the current centre zone.
@@ -95,7 +91,6 @@ def calibrate_depth(tape_m: float):
             400,
         )
     from server.engine.geometry import zone_depths
-
     centre = zone_depths(_last_depth)[1]
     if not math.isfinite(centre) or centre < 0.2:
         return JSONResponse({"ok": False, "error": f"bad centre depth {centre}"}, 400)
