@@ -33,7 +33,9 @@ import kotlin.math.min
 
 @CapacitorPlugin(name = "RaahiDetector")
 class RaahiDetectorPlugin : Plugin() {
+
     private var interpreter: Interpreter? = null
+    
     private var gpu: GpuDelegate? = null
     private var imgsz = 320
     private var classIds: List<String?> = emptyList()   // model output index -> our class id

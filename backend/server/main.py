@@ -22,12 +22,19 @@ try:
 except ImportError:  # pragma: no cover
     _WSGone = WebSocketDisconnect
 from server.config import HOST, MOCK, PORT, ROOT
+
+
+
 from server.dashboard.hub import hub
+
+
 from server.dashboard.render import annotate, colorize_depth, encode_jpeg
 from server.engine.pipeline import GuidanceEngine
 from server.perception.depth import estimate, get_estimator, status as depth_status, warmup
 from server.perception.detector import detect
 from server.voice.intents import Intent, parse
+
+
 from server.voice.token import router as voice_router
 
 app = FastAPI(title="Raahi", version="0.1")

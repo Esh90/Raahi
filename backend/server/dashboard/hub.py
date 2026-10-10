@@ -8,8 +8,14 @@ from collections import deque
 from fastapi import WebSocket
 class DashboardHub:
     def __init__(self) -> None:
-        self.clients: list[WebSocket] = []
+
+
+        self.clients: list[WebSocket] =   []
+
+
         self.latency: deque[int] = deque(maxlen=90)
+
+        
         self.last_payload: dict | None = None
         self.last_push = 0.0
         self.phone_connected = False

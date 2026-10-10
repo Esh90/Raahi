@@ -1,4 +1,5 @@
-# Raahi – native Android app (Kotlin + Jetpack Compose)
+# Integrated complete Raahi – native Android app (Kotlin + Jetpack Compose)
+# the app is made in kotlin and jetpack compose
 
 Front end for the Raahi server (`../../backend/server/`, contracts in `../../docs/contracts/protocol.md`). Nothing in the backend was changed.
 
